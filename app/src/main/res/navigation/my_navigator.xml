@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigator"
+    app:startDestination="@id/product">
+
+    <fragment
+        android:id="@+id/product"
+        android:name="com.example.foryoumagaz.View.ProductFragment"
+        android:label="fragment_product"
+        tools:layout="@layout/fragment_product" >
+        <action
+            android:id="@+id/nvJournal"
+            app:destination="@id/journalFragment" />
+        <action
+            android:id="@+id/action_product_to_journalProductFragment"
+            app:destination="@id/journalProductFragment" />
+        <action
+            android:id="@+id/action_product_to_journalProductFragment2"
+            app:destination="@id/journalProductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/journalFragment"
+        android:name="com.example.foryoumagaz.View.JournalFragment"
+        android:label="fragment_journal"
+        tools:layout="@layout/fragment_journal" >
+        <action
+            android:id="@+id/action_journalFragment_to_product"
+            app:destination="@id/product" />
+        <action
+            android:id="@+id/action_journalFragment_to_journalProductFragment"
+            app:destination="@id/journalProductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/journalProductFragment"
+        android:name="com.example.foryoumagaz.View.JournalProductFragment"
+        android:label="fragment_journal_product"
+        tools:layout="@layout/fragment_journal_product" >
+        <action
+            android:id="@+id/action_journalProductFragment_to_journalFragment"
+            app:destination="@id/journalFragment" />
+        <action
+            android:id="@+id/action_journalProductFragment_to_product"
+            app:destination="@id/product" />
+    </fragment>
+</navigation>
