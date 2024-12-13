@@ -43,8 +43,23 @@ class ProductFragment : Fragment() {
         searchEditText = view.findViewById(R.id.tvPoisk)
         gridView = view.findViewById(R.id.gvProtuct)
         dbHelper = DatabaseManager(requireContext())
-        //dbHelper.addProduct(Product(1,"Хелебный хлеб",R.drawable.img_borodinsky_bread,0))
-
+        /*
+        dbHelper.addProduct(Product(0,"Хлеб Бородинский",R.drawable.img_borodinsky_bread,35))
+        dbHelper.addProduct(Product(1,"Органические яйца",R.drawable.img_organic_eggs,0))
+        dbHelper.addProduct(Product(2,"Молоко",R.drawable.img_milk,546))
+        dbHelper.addProduct(Product(3,"Твердый сыр",R.drawable.img_hard_cheese,546))
+        dbHelper.addProduct(Product(4,"Куриные грудки",R.drawable.img_chicken_breasts,346))
+        dbHelper.addProduct(Product(5,"Картофель",R.drawable.img_potato,12))
+        dbHelper.addProduct(Product(6,"Паста",R.drawable.img_pasta,435))
+        dbHelper.addProduct(Product(7,"Овощной микс",R.drawable.img_vegetable_mix,564))
+        dbHelper.addProduct(Product(8,"Ягодый микс",R.drawable.img_berries_packaging,35))
+        dbHelper.addProduct(Product(9,"Яблоки",R.drawable.img_apples,435))
+        dbHelper.addProduct(Product(10,"Орехи",R.drawable.img_nuts,346))
+        dbHelper.addProduct(Product(11,"Кофе в зернах",R.drawable.img_coffee_beans,346))
+        dbHelper.addProduct(Product(12,"Оливковое масло",R.drawable.img_olive_oil,743))
+        dbHelper.addProduct(Product(13,"Кефир",R.drawable.img_kefir,435))
+        dbHelper.addProduct(Product(14,"Шоколад",R.drawable.img_milka_chocolate,345))
+        */
         itemList = dbHelper.getProducts().filter{it.isVisible == 0}
 
         adapter = ProductAdapter(requireContext(), itemList) { item ->

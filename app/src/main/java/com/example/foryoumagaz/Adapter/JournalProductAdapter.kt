@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.foryoumagaz.Entity.Journal
 import com.example.foryoumagaz.Entity.Product
@@ -43,7 +44,12 @@ class JournalProductAdapter(
 
             checkBox.setOnCheckedChangeListener { _, isChecked ->
                 product.isVisible = if (isChecked) 1 else 0
+                dbHelper.updateProductCheck(product.id, product.isVisible)
             }
         }
+    }
+    fun updateData(newItems: List<Product>) {
+        productList = newItems
+        notifyDataSetChanged()
     }
 }

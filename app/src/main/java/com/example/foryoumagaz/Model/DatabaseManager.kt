@@ -72,7 +72,8 @@ class DatabaseManager(context: Context) {
             id = cursor.getInt(cursor.getColumnIndexOrThrow("id")),
             name = cursor.getString(cursor.getColumnIndexOrThrow("name")),
             img = cursor.getInt(cursor.getColumnIndexOrThrow("img")),
-            count = cursor.getInt(cursor.getColumnIndexOrThrow("count"))
+            count = cursor.getInt(cursor.getColumnIndexOrThrow("count")),
+            isVisible = cursor.getInt(cursor.getColumnIndexOrThrow("visible"))
         )
         cursor.close()
         return product
@@ -94,8 +95,18 @@ class DatabaseManager(context: Context) {
     fun updateProductCheck(productId: Int, checkValue: Int) {
         val db = dbHelper.writableDatabase
         val values = ContentValues().apply {
-            put("chek", checkValue)
+            put("visible", checkValue)
         }
-        db.update("Journal", values, "id = ?", arrayOf(productId.toString()))
+        db.update("Product", values, "id = ?", arrayOf(productId.toString()))
+    }
+    fun getProductNameById(productId: Int): String {
+        val db = dbHelper.readableDatabase
+        val cursor = db.rawQuery("SELECT name FROM Product WHERE id = ?", arrayOf(productId.toString()))
+        var productName = ""
+        if (cursor.moveToFirst()) {
+            productName = cursor.getString(cursor.getColumnIndexOrThrow("name"))
+        }
+        cursor.close()
+        return productName
     }
 }

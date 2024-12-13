@@ -66,4 +66,8 @@ class JournalAdapter(
             notifyItemChanged(adapterPosition)
         }
     }
+    fun updateData(newItems: List<Journal>) {
+        journalList = newItems
+        notifyDataSetChanged()
+    }
 }
