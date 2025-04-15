@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ForYouMagaz"
+rootProject.name = "AftoMaster"
 include(":app")

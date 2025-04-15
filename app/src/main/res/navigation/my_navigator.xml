@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/product"
-        android:name="com.example.foryoumagaz.View.ProductFragment"
+        android:name="com.example.aftomaster.View.ProductFragment"
         android:label="fragment_product"
         tools:layout="@layout/fragment_product" >
         <action
@@ -22,7 +22,7 @@
     </fragment>
     <fragment
         android:id="@+id/journalFragment"
-        android:name="com.example.foryoumagaz.View.JournalFragment"
+        android:name="com.example.aftomaster.View.JournalFragment"
         android:label="fragment_journal"
         tools:layout="@layout/fragment_journal" >
         <action
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/journalProductFragment"
-        android:name="com.example.foryoumagaz.View.JournalProductFragment"
+        android:name="com.example.aftomaster.View.JournalProductFragment"
         android:label="fragment_journal_product"
         tools:layout="@layout/fragment_journal_product" >
         <action

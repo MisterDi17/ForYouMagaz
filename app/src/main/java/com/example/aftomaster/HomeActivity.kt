@@ -1,9 +1,9 @@
-package com.example.foryoumagaz
+package com.example.aftomaster
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.foryoumagaz.View.JournalFragment
-import com.example.foryoumagaz.View.ProductFragment
+import com.example.aftomaster.View.JournalFragment
+import com.example.aftomaster.View.ProductFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class HomeActivity : AppCompatActivity() {

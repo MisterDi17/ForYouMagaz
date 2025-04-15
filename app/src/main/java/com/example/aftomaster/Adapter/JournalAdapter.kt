@@ -6,10 +6,10 @@ import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.foryoumagaz.Entity.Journal
-import com.example.foryoumagaz.Entity.Product
-import com.example.foryoumagaz.Model.DatabaseManager
-import com.example.foryoumagaz.R
+import com.example.aftomaster.Entity.Journal
+import com.example.aftomaster.Entity.Product
+import com.example.aftomaster.Model.DatabaseManager
+import com.example.aftomaster.R
 
 class JournalAdapter(
     private val context: Context,

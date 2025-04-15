@@ -1,4 +1,4 @@
-package com.example.foryoumagaz.Adapter
+package com.example.aftomaster.Adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,8 +8,8 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.res.ResourcesCompat
-import com.example.foryoumagaz.Entity.Product
-import com.example.foryoumagaz.R
+import com.example.aftomaster.Entity.Product
+import com.example.aftomaster.R
 
 class ProductAdapter(
     private val context: Context,

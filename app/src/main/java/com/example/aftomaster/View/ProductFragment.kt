@@ -1,4 +1,4 @@
-package com.example.foryoumagaz.View
+package com.example.aftomaster.View
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog
@@ -17,11 +17,11 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
-import com.example.foryoumagaz.Adapter.ProductAdapter
-import com.example.foryoumagaz.Entity.Journal
-import com.example.foryoumagaz.Entity.Product
-import com.example.foryoumagaz.Model.DatabaseManager
-import com.example.foryoumagaz.R
+import com.example.aftomaster.Adapter.ProductAdapter
+import com.example.aftomaster.Entity.Journal
+import com.example.aftomaster.Entity.Product
+import com.example.aftomaster.Model.DatabaseManager
+import com.example.aftomaster.R
 import com.google.android.material.button.MaterialButton
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
@@ -43,23 +43,10 @@ class ProductFragment : Fragment() {
         searchEditText = view.findViewById(R.id.tvPoisk)
         gridView = view.findViewById(R.id.gvProtuct)
         dbHelper = DatabaseManager(requireContext())
-        /*
-        dbHelper.addProduct(Product(0,"Хлеб Бородинский",R.drawable.img_borodinsky_bread,35))
-        dbHelper.addProduct(Product(1,"Органические яйца",R.drawable.img_organic_eggs,0))
-        dbHelper.addProduct(Product(2,"Молоко",R.drawable.img_milk,546))
-        dbHelper.addProduct(Product(3,"Твердый сыр",R.drawable.img_hard_cheese,546))
-        dbHelper.addProduct(Product(4,"Куриные грудки",R.drawable.img_chicken_breasts,346))
-        dbHelper.addProduct(Product(5,"Картофель",R.drawable.img_potato,12))
-        dbHelper.addProduct(Product(6,"Паста",R.drawable.img_pasta,435))
-        dbHelper.addProduct(Product(7,"Овощной микс",R.drawable.img_vegetable_mix,564))
-        dbHelper.addProduct(Product(8,"Ягодый микс",R.drawable.img_berries_packaging,35))
-        dbHelper.addProduct(Product(9,"Яблоки",R.drawable.img_apples,435))
-        dbHelper.addProduct(Product(10,"Орехи",R.drawable.img_nuts,346))
-        dbHelper.addProduct(Product(11,"Кофе в зернах",R.drawable.img_coffee_beans,346))
-        dbHelper.addProduct(Product(12,"Оливковое масло",R.drawable.img_olive_oil,743))
-        dbHelper.addProduct(Product(13,"Кефир",R.drawable.img_kefir,435))
-        dbHelper.addProduct(Product(14,"Шоколад",R.drawable.img_milka_chocolate,345))
-        */
+        //dbHelper.addProduct(Product(0,"Моторное масло 5W-30",R.drawable.img_motoroil_5w30,20))
+        dbHelper.addProduct(Product(1,"Тормозные колодки",R.drawable.img_brake_pads,15))
+        dbHelper.addProduct(Product(2,"Воздушный фильтр",R.drawable.img_brake_pads,15))
+
         itemList = dbHelper.getProducts().filter{it.isVisible == 0}
 
         adapter = ProductAdapter(requireContext(), itemList) { item ->

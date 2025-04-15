@@ -1,4 +1,4 @@
-package com.example.foryoumagaz.Entity
+package com.example.aftomaster.Entity
 
 data class Product(
     val id: Int,

@@ -1,10 +1,10 @@
-package com.example.foryoumagaz.Model
+package com.example.aftomaster.Model
 
 import android.content.ContentValues
 import android.content.Context
 import android.database.Cursor
-import com.example.foryoumagaz.Entity.Journal
-import com.example.foryoumagaz.Entity.Product
+import com.example.aftomaster.Entity.Journal
+import com.example.aftomaster.Entity.Product
 
 class DatabaseManager(context: Context) {
     private val dbHelper = DatabaseHelper(context)

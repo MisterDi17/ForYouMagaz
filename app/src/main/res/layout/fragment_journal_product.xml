@@ -44,14 +44,14 @@
                 android:id="@+id/btJournalOrder"
                 android:layout_width="140dp"
                 android:layout_height="50dp"
-                android:backgroundTint="#A6662E"
+                android:backgroundTint="#52A62E"
                 android:layout_marginRight="45dp"
                 android:text="Заказы"
                 android:textColor="@color/white" />
             <com.google.android.material.button.MaterialButton
                 android:layout_width="140dp"
                 android:layout_height="50dp"
-                android:backgroundTint="#A6662E"
+                android:backgroundTint="#36A62E"
                 android:text="Товары"
                 android:textColor="@color/white" />
         </LinearLayout>

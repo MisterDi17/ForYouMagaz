@@ -1,4 +1,4 @@
-package com.example.foryoumagaz
+package com.example.aftomaster
 
 import org.junit.Test
 

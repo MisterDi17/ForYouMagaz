@@ -5,17 +5,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#F6CE30">
+    android:background="#3E8E1B"
+    tools:context=".MainActivity">
+
     <View
         android:id="@+id/view"
         android:layout_width="785dp"
         android:layout_height="712dp"
+        android:layout_marginTop="-300dp"
         android:background="@drawable/gradient_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="-300dp"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/view2"
@@ -26,41 +27,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:gravity="center_vertical"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="100dp">
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="133dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="-20dp"
-            app:srcCompat="@drawable/for_you_text" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="161dp"
-            android:layout_height="38dp"
-            app:srcCompat="@drawable/magaz_text" />
-
-        <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="365dp"
             android:layout_height="159dp"
             android:layout_gravity="center"
             android:layout_marginTop="-20dp"
             app:srcCompat="@drawable/log" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="335dp"
+            android:layout_height="159dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-20dp"
+            app:srcCompat="@drawable/master_text" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

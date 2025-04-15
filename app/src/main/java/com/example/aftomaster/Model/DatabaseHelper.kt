@@ -1,4 +1,4 @@
-package com.example.foryoumagaz.Model
+package com.example.aftomaster.Model
 
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase

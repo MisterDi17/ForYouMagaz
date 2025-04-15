@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.foryoumagaz"
+    namespace = "com.example.aftomaster"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.foryoumagaz"
+        applicationId = "com.example.aftomaster"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
